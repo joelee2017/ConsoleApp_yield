@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp_yield
 {
@@ -6,7 +7,7 @@ namespace ConsoleApp_yield
     {
         static void Main(string[] args)
         {
-           private static IEquatable<int> GetCollection3(IEquatable<int> NumberSeries)
+           private static IEnumerable<int> GetCollection3(IEnumerable<int> NumberSeries)
             {
                 foreach( var number in NumberSeries)
                 {
