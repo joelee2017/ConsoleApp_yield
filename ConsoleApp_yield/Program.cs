@@ -6,7 +6,20 @@ namespace ConsoleApp_yield
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           private static IEquatable<int> GetCollection3(IEquatable<int> NumberSeries)
+            {
+                foreach( var number in NumberSeries)
+                {
+                    if(number > 100)
+                    {
+                        yield break;
+                    }
+                    else
+                    {
+                        yield return number;
+                    }
+                }
+            }
         }
     }
 }
